@@ -1,0 +1,11 @@
+Package: myf
+Type: Package
+Title: Random functions for better living.
+Version: 1.0
+Date: 2022-12-08
+Author: J. Chamberlin <jordan.chamberlin@gmail.com>
+Maintainer: Who to complain to <jordan.chamberlin@gmail.com>
+Description: This package holds random functions for recycling. 
+License: GPL3
+
+
