@@ -1,0 +1,120 @@
+\nonstopmode{}
+\documentclass[a4paper]{book}
+\usepackage[times,inconsolata,hyper]{Rd}
+\usepackage{makeidx}
+\usepackage[utf8]{inputenc} % @SET ENCODING@
+% \usepackage{graphicx} % @USE GRAPHICX@
+\makeindex{}
+\begin{document}
+\chapter*{}
+\begin{center}
+{\textbf{\huge Package `myf'}}
+\par\bigskip{\large \today}
+\end{center}
+\ifthenelse{\boolean{Rd@use@hyper}}{\hypersetup{pdftitle = {myf: Random functions for better living.}}}{}
+\begin{description}
+\raggedright{}
+\item[Type]\AsIs{Package}
+\item[Title]\AsIs{Random functions for better living.}
+\item[Version]\AsIs{1.0}
+\item[Date]\AsIs{2022-12-08}
+\item[Author]\AsIs{J. Chamberlin }\email{jordan.chamberlin@gmail.com}\AsIs{}
+\item[Maintainer]\AsIs{Who to complain to }\email{jordan.chamberlin@gmail.com}\AsIs{}
+\item[Description]\AsIs{This package holds random functions for recycling. }
+\item[License]\AsIs{GPL3}
+\end{description}
+\Rdcontents{\R{} topics documented:}
+\inputencoding{utf8}
+\HeaderA{myf-package}{Random functions for better living.}{myf.Rdash.package}
+\aliasA{myf}{myf-package}{myf}
+%
+\begin{Description}\relax
+This package holds random functions for recycling. 
+\end{Description}
+%
+\begin{Details}\relax
+
+No description yet. 
+Please be patient. 
+The DESCRIPTION file:
+This package was not yet installed at build time.\\{}
+
+Index:  This package was not yet installed at build time.\\{}
+\textasciitilde{}\textasciitilde{} An overview of how to use the package, including the most important functions \textasciitilde{}\textasciitilde{}
+\end{Details}
+%
+\begin{Author}\relax
+J. Chamberlin <jordan.chamberlin@gmail.com>
+
+Maintainer: Who to complain to <jordan.chamberlin@gmail.com>
+\end{Author}
+\inputencoding{utf8}
+\HeaderA{area\_circle}{Area of a circle}{area.Rul.circle}
+\keyword{workshop}{area\_circle}
+\keyword{self-improvement}{area\_circle}
+\keyword{spatial}{area\_circle}
+%
+\begin{Description}\relax
+Compute the area of a circle by providing the radius.
+\end{Description}
+%
+\begin{Usage}
+\begin{verbatim}
+area_circle(radius)
+\end{verbatim}
+\end{Usage}
+%
+\begin{Arguments}
+\begin{ldescription}
+\item[\code{radius}] numeric. Cannot be negative.
+\end{ldescription}
+\end{Arguments}
+%
+\begin{Details}\relax
+Nothing more to say...
+\end{Details}
+%
+\begin{Value}
+numeric
+\end{Value}
+%
+\begin{Note}\relax
+Apples and oranges....
+\end{Note}
+%
+\begin{Author}\relax
+j.chamberlin
+\end{Author}
+%
+\begin{References}\relax
+Pythagoras, 980
+\end{References}
+%
+\begin{SeeAlso}\relax
+\code{\LinkA{length}{length}}, \textasciitilde{}\textasciitilde{}\textasciitilde{}
+\end{SeeAlso}
+%
+\begin{Examples}
+\begin{ExampleCode}
+ 
+area_circle(5)
+
+
+## The function is currently defined as
+function (radius) 
+{
+    if (!is.numeric(radius)) {
+        warning("radius must be numeric")
+        return(NA)
+    }
+    if (radius < 0) {
+        warning("radius must be a positive value")
+        return(NA)
+    }
+    area <- pi * radius * radius
+    return(area)
+  }
+\end{ExampleCode}
+\end{Examples}
+\printindex{}
+\end{document}
